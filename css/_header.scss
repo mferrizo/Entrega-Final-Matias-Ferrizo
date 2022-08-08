@@ -1,0 +1,53 @@
+/* Partials del Header */
+.header {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    &__propio {
+        background-color: #1FAB89;
+    }
+        //Logo y Barra de Navegacion//
+    &__logocel {
+        visibility: hidden;
+        width: 100px;
+        height: 100px;
+    }
+    &__logopc {
+        width: 100px;
+        height: 100px;
+    }    
+    .nav__menu .nav__activo a:hover {
+        color:#D7FBE8
+    }
+    &__buscar {
+        background-color: #9DF3C4;
+    }
+    //Botones de las Redes sociales - Header//
+    .redes__pc {    
+        visibility: hidden;
+    }
+    .facebook {
+        color: #3b5998;
+        font-size: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+    .instagram {
+        color: #C13584;
+        font-size: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+    .whatsapp {
+        color: #ffffff;
+        font-size: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+    .twitter {
+        color: #14171A;
+        font-size: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+    .youtube {
+        color: #FF0000;
+        font-size: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+}
+

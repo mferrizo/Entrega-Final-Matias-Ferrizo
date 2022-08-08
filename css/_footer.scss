@@ -1,0 +1,28 @@
+// Todo el Footer
+.footer {
+    background-color: #1FAB89;
+    text-align: center;
+        //Botones de las Redes sociales - Header//
+        .redes__pc {    
+            visibility: hidden;
+        }
+    }
+/* Boton Flotante de Whatsapp */
+.whatsapp__flotante {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    
+    .whatsapp-icon {
+        margin-top:13px;
+      }
+  
+}

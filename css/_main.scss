@@ -1,0 +1,177 @@
+//MIXIN DE CLIENTES
+@mixin superposicion-img {
+    border-radius: 10%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; 
+    h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: white;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      border-bottom: 1px solid white;
+    }
+  }
+  //MIXINS BOTONES PLANES
+@mixin boton-generico {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 28px;
+    &:hover {
+        background: #1FAB89;
+        text-decoration: none;
+        color: #ffffff;
+    }   
+}
+
+// CUERPO INDEX
+.index {
+    background-color:#ffffff;
+
+&__section {
+    margin-top: 20px;
+    margin-left: 5%;
+}
+&__img {
+    margin: 20px auto 10Ppx 10px;
+    width: 70%;
+    height:50%;
+    text-align: center;
+}
+}
+
+// CUERPO PLANES
+.planes {
+    background-color: #ffffff;
+    &__img {
+        width: 50%;
+    }
+}
+.btn-usuarios {
+    @include boton-generico;
+    border: solid  2px;
+    background:#000000;
+  }
+.btn-pymes {
+    @include boton-generico;
+    border: solid #ffffff 2px;
+    background:#FF0000;
+  }
+.btn-empresas {
+    @include boton-generico;
+    border: solid #ffffff 2px;
+    background: #2121FF;
+  }
+// CUERPO CLIENTES
+
+   .clientes {
+    margin-top: 10px;
+    padding-top: 5px;
+    &__titulo-y-sub {
+      margin-bottom: 10px;
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-bottom: 1px solid #444444;
+        display: inline-block;
+      }
+    }
+    &__titulo-y-sub {
+      color: #444444;
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+  } 
+  .modulo {
+  &__imagen {
+    position: relative;
+    overflow: hidden;
+    img {  width: 100%;  }
+  }
+  
+    .superposicion {
+      @include superposicion-img;
+    }
+    &__imagen:hover .superposicion {
+      opacity: 0.7;
+      visibility: visible;
+    }
+  }
+  
+
+// CUERPO EQUIPO
+.equipo {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 70%;
+    height: 100%;
+    & h5 {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+// CUERPO CONTACTO
+.contacto {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 60%;
+    height: 100%;
+
+    &__caja {
+        background-color: #1FAB89;
+        border-radius: 1%;
+        padding:20px 20px;
+    }
+    & h5 {
+        text-align: center;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 70%;
+        height: 100%;
+    }
+    & h2 {
+        text-align: center;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 70%;
+        height: 100%;
+    }
+    img {
+        height: 20%;
+        width: 44%;
+        margin: auto;
+    }
+}
